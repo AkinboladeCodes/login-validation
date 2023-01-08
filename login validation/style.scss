@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to left, #446ae7, #44dce7);
+    font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+        cursor: cell;
+    }
+    span{
+        color: red;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: fit-content;
+            .header{
+                display: block;
+                justify-content: center;
+                align-items:  center;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 600;
+                color: white;
+                padding: 0 0 2rem;
+            }
+
+            .loginText{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: white;
+                }
+                input{
+                    outline: none;
+                    border: .1rem solid white;
+                    color: black;
+                    margin: 1rem 0;
+                    padding: 1rem .4rem;
+                    border-radius: .6rem;
+                    background: none;
+                    cursor: pointer;
+                }
+            }
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 2rem 0;
+                .btn{
+                    outline: none;
+                    border: .10rem solid white;
+                    width: 100px;
+                    border-radius: .2rem;
+                    color: white;
+                    text-align: center;
+                    padding: .5rem .6rem;
+                    margin-bottom: 2rem;
+
+                }
+                .forgetpassword{
+                    color: white;
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+                .signupLink{
+
+                    span{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

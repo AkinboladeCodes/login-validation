@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <div class="header">
+                <h2>Login</h2>
+            </div>
+
+            <div class="loginText">
+                <label for="username"> Username</label>
+                <input type="text" placeholder="Enter Username" oninput=" return CheckUser() " id="username">
+                <p class="Errormessage" id="errormessage1"></p>
+
+                <label for="password"> Passsword</label>
+                <input type="password" placeholder="Enter Password" oninput=" return PasswordCheck() " id="password">
+                <p class="Errormessage" id="errormessage2"></p>
+
+              
+            </div>
+
+            <div class="buttons">
+                <a class="btn" id="loginBtn"> Login </a>
+                <a class="forgetpassword">forget password?</a>
+                <a class="signupLink"> Don't have an Acccount?<span> Create Account. </span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
